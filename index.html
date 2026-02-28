@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>أناقة | متجر الساعات الفاخر</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>⌚ أناقة</h1>
+<p>الفخامة عنواننا</p>
+</header>
+
+<div class="products" id="products"></div>
+
+<div class="order-box">
+
+<h2>🧾 نموذج الطلب</h2>
+
+<input type="text" id="customerName" placeholder="الاسم الكامل">
+<input type="text" id="customerPhone" placeholder="رقم الهاتف">
+
+<select id="wilaya" onchange="updateDelivery()">
+<option value="0">اختر الولاية</option>
+</select>
+
+<p>المجموع: <span id="total">0</span> دج</p>
+<p>سعر التوصيل: <span id="deliveryPrice">0</span> دج</p>
+<p class="final">السعر الكلي: <span id="finalTotal">0</span> دج</p>
+
+<button onclick="submitOrder()">تأكيد الطلب</button>
+
+<p><a href="track.html" class="track-btn">تتبع طلبي</a></p>
+
+</div>
+
+<script src="script.js"></script>
+<p><a href="track.html" class="track-btn">تتبع طلبي</a></p>
+</body>
+</html>

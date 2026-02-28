@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>إدارة المنتجات</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>إضافة ساعة جديدة</h2>
+
+<input type="text" id="name" placeholder="اسم الساعة">
+<input type="number" id="price" placeholder="السعر">
+<input type="file" id="image">
+
+<button onclick="addProduct()">إضافة</button>
+<button onclick="logout()">تسجيل خروج</button>
+
+<h2>المنتجات</h2>
+<div id="adminProducts"></div>
+
+<h2>📦 الطلبات</h2>
+<div id="ordersContainer"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

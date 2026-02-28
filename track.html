@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>تتبع الطلب - أناقة</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+<h1>تتبع طلبك</h1>
+</header>
+
+<div class="order-box">
+<input type="number" id="orderId" placeholder="ادخل رقم الطلب">
+<button onclick="trackOrder()">بحث</button>
+
+<div id="result"></div>
+</div>
+
+<script>
+function trackOrder(){
+  let id = document.getElementById("orderId").value;
+  let orders = JSON.parse(localStorage.getItem("orders")) || [];
+  let resultDiv = document.getElementById("result");
+
+  let order = orders.find(o => o.id == id);
+
+  if(order){
+    resultDiv.innerHTML = `
+      <h3>نتيجة البحث</h3>
+      <p>الاسم: ${order.name}</p>
+      <p>الولاية: ${order.wilaya}</p>
+      <p>المنتجات: ${order.items.map(i => i.name + " × " + i.qty).join("<br>")}</p>
+      <p>السعر: ${order.total} دج</p>
+      <p>الحالة: ${order.status}</p>
+    `;
+  }else{
+    resultDiv.innerHTML = "<p>لم يتم العثور على الطلب</p>";
+  }
+}
+</script>
+
+</body>
+</html>

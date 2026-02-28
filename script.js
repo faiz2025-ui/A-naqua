@@ -1,8 +1,8 @@
 // ======== المنتجات الافتراضية ========
 let products = [
-  {name:"ساعة ذهبية", price:15000, image:"images/gold_watch.jpg"},
-  {name:"ساعة فضية", price:12000, image:"images/silver_watch.jpg"},
-  {name:"ساعة كلاسيك", price:10000, image:"images/classic_watch.jpg"}
+  {name:"ساعة ذهبية", price:15000, image:"img/logo.webp"},
+  {name:"ساعة فضية", price:12000, image:"img/OIP(1).webp"},
+  {name:"ساعة كلاسيك", price:10000, image:"img/OIP.webp"}
 ];
 
 // ======== قائمة الولايات مع سعر التوصيل ========
@@ -208,4 +208,5 @@ function init(){
 
 // ======== تشغيل ========
 init();
+
 

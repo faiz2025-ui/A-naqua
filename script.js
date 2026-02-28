@@ -1,7 +1,7 @@
 // ======== المنتجات الافتراضية ========
 let products = [
   {name:"ساعة ذهبية", price:15000, image:"img/logo.webp"},
-  {name:"ساعة فضية", price:12000, image:"img/OIP(1).webp"},
+  {name:"ساعة فضية", price:12000, image:"img/OIP (1).webp"},
   {name:"ساعة كلاسيك", price:10000, image:"img/OIP.webp"}
 ];
 
@@ -208,5 +208,6 @@ function init(){
 
 // ======== تشغيل ========
 init();
+
 
 
